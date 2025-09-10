@@ -1,0 +1,101 @@
+ALGORITHM AOT
+VAR
+    b,h:INTEGER;
+    area:FLOAT;
+BEGIN
+    read(b,h);
+    area:= 0.5*b*h;
+    write(area);
+END
+Problem:
+Write an algorithm that calculates the Simple Interest (SI) 
+and the Final Amount (A) given the following formulae:
+
+
+📝 Task: Area of a Triangle using Heron’s Formula
+
+Problem:
+Given the three sides of a triangle a, b, and c, calculate the area using Heron’s formula.
+
+
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
+
+📝 Task: Simple Interest & Final Amount
+
+
+
+ALGORITHM even_odd
+VAR
+    n:INTEGER;
+BEGIN
+    read(n);
+    IF (n%2=0) THEN
+        write("even");
+    ELSE
+        write("odd");
+    END_IF
+END
+
+📝 Task: Find the Largest of Three Numbers
+
+Problem:
+Write an algorithm that reads three(a,b,c) numbers and determines which one is the largest.
+ALGORITHM largest_of_three
+VAR
+    a,b,c:INTEGER;
+BEGIN
+22,65,12
+    read(a,b,c);
+    IF (a>b and a>c) THEN
+        write(a);
+    ELSE_IF (b>a and b>c) THEN
+        write(b)
+    ELSE
+        write(c);
+    END_IF
+
+    // IF (a>b and a>c) THEN
+    //     write(a);
+    // END_IF
+    // IF (b>a and b>c) THEN
+    //     write(b);
+    // END_IF
+
+    // IF (c>a and c>b) THEN
+    //     write(c);
+    // END_IF
+END
+Problem:
+Write an algorithm that reads a student’s score (0–100) and assigns a grade based 
+on the following rules:
+
+A: 70–100
+B: 60–69
+C: 50–59
+D: 40–49
+F: 0–39
+
+ALGORITHM grade_classification
+VAR
+    score:INTEGER;
+BEGIN
+    read(score);
+    IF (score>100 or score<0) THEN
+        write("Invalid score");
+    ELSE_IF (score>=70) THEN
+        write("A");
+    ELSE_IF (score>=60) THEN
+        write("B");
+    ELSE_IF (score>=50) THEN
+        write("C");
+    ELSE_IF (score>=40) THEN
+        write("D");
+    ELSE
+        write("F");
+    END_IF
+END
